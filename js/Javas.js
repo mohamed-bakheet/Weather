@@ -17,7 +17,7 @@ Search.addEventListener("keyup", function (a) {
 getWeather("cairo");
 async function getWeather(res) {
 
-       let result = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=f088573d797f4308947165051252706&q=${res}&days=3`);
+       let result = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=f088573d797f4308947165051252706&q=${res}&days=3`);
        if ((result.ok && 400 != result.status)) {
              let res = await result.json();
               

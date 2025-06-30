@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style/all.min.css">
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+  <nav class="navbar bg-dark navbar-expand-lg border-body" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand d-flex" href="#">
+        <img src="./imgs/logo@2x.png" alt="clouds">
+        <div class="logo-type">
+          <h1 class="site-title mb-0 fs-6">Weather</h1>
+          <small class="site-description ">tagline goes here</small>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link " href="#">Features</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="container">
+      <form class="find-location">
+        <input type="text" placeholder="Find your location..." id="search">
+        <input type="button" value="Find" id="submit">
+      </form>
+
+    </div>
+  </div>
+
+  <div class="forecast-table">
+    <div class="container">
+      <div class="forecast-container row" id="forecast">
+        <div class="today forecast col-lg-4 px-0">
+          <div class="forecast-header d-flex justify-content-between" id="today">
+            <div class="day">Thursday</div>
+            <div class=" date">26June</div>
+          </div> 
+          <div class="forecast-content" id="current">
+            <div class="location">Cairo</div>
+            <div class="degree">
+              <div class="num">31.3<sup>o</sup>C</div>
+
+              <div class="forecast-icon">
+                <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="90"
+                  class="imageye-selected">
+              </div>
+
+            </div>
+            <div class="custom">Sunny</div>
+            <span><img src="https://routeweather.netlify.app/images/icon-umberella@2x.png" alt="" width="21" height="21"
+                class="imageye-selected">20%</span>
+            <span><img src="https://routeweather.netlify.app/images/icon-wind@2x.png" alt="" width="23" height="21"
+                class="imageye-selected">18km/h</span>
+            <span><img src="https://routeweather.netlify.app/images/icon-compass@2x.png" alt="" width="21" height="21"
+                class="imageye-selected">East</span>
+          </div>
+        </div>
+        <div class="row col-lg-8 ms-0 px-0" id="rowForecast">
+       
+                   </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<form action="#" class="subscribe-form">
+								<input type="text" placeholder="Enter your email to subscribe...">
+								<input type="submit" value="Subscribe">
+							</form>
+						</div>
+						<div class="col-md-3 offset-md-1">
+							<div class="social-links">
+								<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+								<a href="#"><i class="fa-brands fa-twitter"></i></a>
+								<a href="#"><i class="fa-brands fa-google-plus"></i></a>
+								<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+							</div>
+						</div>
+					</div>
+
+					<p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+				</div>
+			</footer>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/Javas.js"></script>
+</body>
+
+</html>
